@@ -1,0 +1,58 @@
+.weather header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://www.accuweather.com/images/hero/4/1440x450.jpg");
+    height: 50vh;
+}
+
+.weather section {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.weather input {
+    padding: 0.3rem;
+    width: 25rem;
+}
+
+.weather button {
+    color: white;
+    font-size: 1.1rem;
+    background-color: rgb(70, 70, 206);
+    border: none;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.weather main {
+    margin: auto;
+    width: 26rem;
+    height: 15rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 6px 6px 6px rgb(236, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather img {
+    width: 4rem;
+}
+
+.weather p,
+h4 {
+    font-size: 1.3em;
+}
+
+.weather h4 {
+    margin-top: -1rem;
+}
