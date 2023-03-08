@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Home = () => {
     const [data, setData] = useState({});
-    const [city, setCity] = useState("")
+    const [city, setCity] = useState("lucknow")
     const key = "c178a151e62048ca78f372b7385a0c7b"
 
     const cityNameHandler = (event) => {
@@ -38,8 +38,9 @@ const Home = () => {
             </header>
             {Object.keys(data).length > 0 && <main>
                 <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" />
-                <p>{data?.name}</p>
+                <p className={classes.city}>{data?.name}</p>
                 <h4>{Math.floor((data?.main.temp - 273.15))}°C</h4>
+                <p className={classes.feel}>Feels like {Math.floor(data?.main.feels_like - 273.15)}°</p>
             </main>}
 
         </div>

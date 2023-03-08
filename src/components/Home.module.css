@@ -48,11 +48,11 @@
     width: 4rem;
 }
 
-.weather p,
-h4 {
+.weather h4 {
     font-size: 1.3em;
+    margin-top: -1rem;
 }
 
-.weather h4 {
-    margin-top: -1rem;
+.city {
+    font-size: 1.3rem;
 }
