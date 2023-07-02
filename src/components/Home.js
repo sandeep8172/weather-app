@@ -16,9 +16,9 @@ const Home = () => {
             .get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
             .then((response) => {
                 setData(response.data)
-                console.log(response.data);
             })
             .catch((error) => {
+                console.log(error);
             })
 
     }
